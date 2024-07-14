@@ -1,0 +1,47 @@
+#root {
+  background-color: rgba(32, 32, 226, 0.765);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: white;
+  height: 270px;
+  width: 350px;
+  border-radius: 10px;
+}
+
+main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+}
+
+main > div > h1 {
+  font-size: 30px;
+  padding: 10px;
+}
+
+main > div > p:last-child {
+  font-size: 25px;
+  color: rgb(126, 124, 122);
+}
+
+main div:nth-child(2) {
+  height: 150px;
+  margin-top: 10px;
+}
+
+main div:nth-child(2) p {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+main div:nth-child(2) img {
+  height: 80px;
+  width: 90px;
+}
