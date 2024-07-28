@@ -29,13 +29,14 @@ const Weather = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://api.airvisual.com/v2/nearest_city?key=${APIKEY}`
+          `https://api.airvisual.com/v2/nearest_city?key=${APIKEY}`
         );
         setWeatherData(response.data);
+        console.log("data", response.data);
         setIsLoading(false);
       } catch (error) {
         console.log(error.response);
-        if (error.response.status === 429) {
+        if (error.response && error.response.status === 429) {
           setOpen(true);
         }
       }
